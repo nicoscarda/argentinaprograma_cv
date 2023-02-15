@@ -1,0 +1,233 @@
+body {
+  background-color: gainsboro;
+  font-family: 'Space Mono', monospace;
+}
+
+.pagina {
+  background-color: whitesmoke;
+  margin: 1vw 10vw;
+  padding: 3vw 5vw;
+  box-shadow: 5px 5px 10rem gray;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 3.3rem;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: gray;
+}
+
+p {
+  text-align: left;
+  font-size: medium;
+}
+
+article {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.banner {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: -2px 0px 5px gray;
+}
+
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+textarea {
+  overflow-y: scroll;
+  resize: none;
+  width: 50%;
+  border-radius: 5px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.botonsend {
+  background: gainsboro;
+  width: 5rem;
+}
+
+.mensajeerror {
+  display:inline;
+  color:crimson;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.column img {
+  padding-bottom: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navegacion {
+  margin-top: 0;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 30px;
+}
+
+.navegacion a{
+  background-color: gray;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: auto;
+  color: whitesmoke;
+}
+
+.navegacion a:hover{
+  background-color: black;
+}
+
+h2 {
+  background-color: gray;
+  color: whitesmoke;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+
+.botonera {
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.botonera a{
+  color: gray;
+}
+
+.botonera a:hover{
+  color: black;
+}
+
+button {
+  background-color: gray;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  font-size:larger;
+  text-decoration: none;
+  color: whitesmoke;
+  vertical-align: middle;
+  font-family: 'Space Mono', monospace;
+}
+
+button:hover, .botonsend:hover{
+  background-color: black;
+}
+
+.botonsend{
+  background-color: gray;
+  font-family: 'Space Mono', monospace;
+  color: whitesmoke;
+  font-size: medium;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer p {
+  padding-top: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .pagina {
+    margin: 1vw 5vw;
+    padding: 2vw;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .navegacion{
+    float:none;
+    line-height: 50px;
+  }
+  .perfil {
+    transform: translate(-50%, -30%);
+  }
+
+  h1 {
+    margin-top: 9rem;
+    margin-bottom: 20px;
+    line-height: 70px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  textarea{
+    width: 100%;
+  }
+}
